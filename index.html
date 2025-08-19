@@ -6,82 +6,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Biodata</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
 </head>
 
 <body>
   <!-- Section 1: Menu -->
-  <nav>
-    <div class="texttitle">
-      <h1><a href="#">PortoMe</a></h1>
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+      <!-- Brand di kiri -->
+      <a class="navbar-brand" href="#">PortoMe</a>
+
+      <!-- Tombol toggle (untuk HP) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu di kanan -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#biodata">Biodata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#biodata">Biodata</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-    </ul>
   </nav>
 
   <!-- Section 2: Judul dan Gambar -->
-  <section class="hero" id="hero">
-    <div>
-      <h1>Halo, Saya Zidan Fadillah</h1>
-      <p>Mahasiswa & Web Developer</p>
+  <section class="hero py-5" id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+          <h1 class="display-5 fw-bold text-primary">Halo, Saya Zidan Fadillah</h1>
+          <p class="lead">Mahasiswa & Web Developer</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/batik-re.png" alt="Foto Profil" class="img-fluid rounded-circle shadow" style="max-width: 220px; background: #0077cc;" />
+        </div>
+      </div>
     </div>
-    <img src="img/batik-re.png" alt="Foto Profil">
   </section>
 
   <!-- Section 3: Biodata -->
-  <section class="biodata" id="biodata">
-    <h2>Biodata Saya</h2>
-    <div class="bio-grid">
-      <div class="bio-box">
-        <h3>Nama</h3>
-        <p>Zidan Fadillah</p>
-      </div>
-      <div class="bio-box">
-        <h3>NIM</h3>
-        <p>15220378</p>
-      </div>
-      <div class="bio-box">
-        <h3>Jurusan</h3>
-        <p>Teknik Informatika</p>
-      </div>
-      <div class="bio-box">
-        <h3>Universitas</h3>
-        <p>Universitas Contoh</p>
-      </div>
-      <div class="bio-box">
-        <h3>Email</h3>
-        <p>zidan@email.com</p>
-      </div>
-      <div class="bio-box">
-        <h3>Hobi</h3>
-        <p>Coding, Desain, Gaming</p>
+  <section class="biodata py-5" id="biodata">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Biodata Saya</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Nama</h5>
+              <p class="card-text">Zidan Fadillah</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">NIM</h5>
+              <p class="card-text">15220378</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Jurusan</h5>
+              <p class="card-text">Teknik Informatika</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Universitas</h5>
+              <p class="card-text">Universitas Contoh</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Email</h5>
+              <p class="card-text">zidan@email.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title text-primary">Hobi</h5>
+              <p class="card-text">Coding, Desain, Gaming</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Section 4: Portfolio -->
-  <section class="portfolio" id="portfolio">
-    <h2>Portofolio</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="img/porto.jpg" alt="Proyek 1">
-        <h3>Website Portfolio</h3>
-        <p>Membuat website pribadi dengan HTML, CSS, dan JavaScript.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="img/port1.png" alt="Proyek 2">
-        <h3>Sistem Pembayaran</h3>
-        <p>Aplikasi pembayaran listrik berbasis web dengan CodeIgniter.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="img/porto2.jpg" alt="Proyek 3">
-        <h3>Dashboard Salon</h3>
-        <p>Dashboard manajemen salon menggunakan Tailwind CSS.</p>
+  <section class="portfolio py-5 bg-light" id="portfolio">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Portofolio</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/porto.jpg" class="card-img-top" alt="Proyek 1" style="object-fit:cover; max-height:180px;">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Website Portfolio</h5>
+              <p class="card-text">Membuat website pribadi dengan HTML, CSS, dan JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/port1.png" class="card-img-top" alt="Proyek 2" style="object-fit:cover; max-height:180px;">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Sistem Pembayaran</h5>
+              <p class="card-text">Aplikasi pembayaran listrik berbasis web dengan CodeIgniter.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/porto2.jpg" class="card-img-top" alt="Proyek 3" style="object-fit:cover; max-height:180px;">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Dashboard Salon</h5>
+              <p class="card-text">Dashboard manajemen salon menggunakan Tailwind CSS.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
